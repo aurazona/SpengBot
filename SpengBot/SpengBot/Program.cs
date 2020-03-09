@@ -191,14 +191,14 @@ namespace DiscAura
             };
 
             //ban canceller
-            //in case I get banned, automatically unbans me and shoots me a fresh invite
+            //in case I get banned, automatically unbans me. can't shoot me an invite since discord doesn't let bots create invites.
             discord.GuildBanAdded += async e =>
             {
                 if (e.Member.Id.ToString().Equals(AdminID))
                 {
                     DiscordMember bannedUser = e.member;
                     e.Guild.UnbanMemberAsync == (bannedUser);
-                    e.Member.CreateDMChannel
+                    e.Member.
                 }
             };
             
