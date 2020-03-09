@@ -192,14 +192,15 @@ namespace DiscAura
 
             //ban canceller
             //in case I get banned, automatically unbans me and shoots me a fresh invite
-            /***discord.GuildBanAdded += async e =>
+            discord.GuildBanAdded += async e =>
             {
                 if (e.Member.Id.ToString().Equals(AdminID))
                 {
-                    e.Guild.UnbanMemberAsync == (Aurazona#1337)
+                    DiscordMember bannedUser = e.member;
+                    e.Guild.UnbanMemberAsync == (bannedUser);
                 }
             };
-            ***/
+            
             await discord.ConnectAsync();
 
             await Task.Delay(-1);
