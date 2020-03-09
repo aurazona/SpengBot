@@ -144,7 +144,7 @@ namespace DiscAura
 
             //stat grabber part 1
             //gets ping, DSharp version, the current time and the amount of guilds SpengBot's in.
-            static void StatGrab()
+            void StatGrab()
             {
                 SpengPing = discord.Ping;
                 DsharpVer = discord.VersionString;
@@ -198,6 +198,7 @@ namespace DiscAura
                 {
                     DiscordMember bannedUser = e.member;
                     e.Guild.UnbanMemberAsync == (bannedUser);
+                    e.Member.CreateDMChannel
                 }
             };
             
