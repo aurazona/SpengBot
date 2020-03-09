@@ -196,10 +196,21 @@ namespace DiscAura
             {
                 if (e.Member.Id.ToString().Equals(AdminID))
                 {
-                    DiscordMember bannedUser = e.member;
-                    e.Guild.UnbanMemberAsync == (bannedUser);
-                    e.Member.
+                    DiscordMember bannedUser = e.Member;
+                    e.Guild.UnbanMemberAsync(bannedUser, ["now that wasn't very nice, was it?"]);
+                    await e.Member.CreateDmChannelAsync();
+                    
                 }
+            };
+
+            discord.DmChannelCreated += async e =>
+            {
+                await e.Channel.SendMessageAsync("Sorry, but SpengBot is not taking DMs at the moment.");
+            };
+
+            discord.MessageDeleted += async e =>
+            {
+                await e.Message.RespondAsync($"smh my head. ayo {e.Message.Author.Mention}, someone deleted your mf message.");
             };
             
             await discord.ConnectAsync();

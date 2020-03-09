@@ -182,5 +182,13 @@ namespace SpengBot
             }
             
         }
+
+        [Command("Define")]
+
+        public async Task Define(CommandContext ctx, string define)
+        {
+            await ctx.RespondAsync("check this shit out:");
+            await ctx.RespondAsync($"https://www.dictionary.com/browse/{define}");
+        }
     }
 }
