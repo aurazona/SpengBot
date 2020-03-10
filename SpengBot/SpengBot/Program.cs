@@ -25,6 +25,7 @@ namespace DiscAura
         static public bool StatsGrabbed; //used to verify that stats have, in fact, been grabbed
         static public bool SpengDebug; //used to verify that debug mode is on/off
         static string AdminID = "232162231465410560";
+        static bool MemberBanned; //used to output a different message when someone gets banned in DMs.
 
         static void Main(string[] args)
         {
@@ -197,9 +198,9 @@ namespace DiscAura
                 if (e.Member.Id.ToString().Equals(AdminID))
                 {
                     DiscordMember bannedUser = e.Member;
-                    e.Guild.UnbanMemberAsync(bannedUser, ["now that wasn't very nice, was it?"]);
+                    await e.Guild.UnbanMemberAsync(bannedUser, "now that wasn't very nice, was it?");
                     await e.Member.CreateDmChannelAsync();
-                    
+                    MemberBanned = true;
                 }
             };
 
@@ -207,7 +208,15 @@ namespace DiscAura
 
             discord.DmChannelCreated += async e => //if a DM channel is created between SpengBot and someone else
             {
-                await e.Channel.SendMessageAsync("Sorry, but SpengBot is not taking DMs at the moment.");
+                if (MemberBanned == true)
+                {
+                    await e.Channel.SendMessageAsync("Uh oh, looks like you got banned.");
+                    MemberBanned = false;
+                }
+                else
+                {
+                    await e.Channel.SendMessageAsync("Sorry, but SpengBot is not taking DMs at the moment.");
+                }
             };
 
             //message deletion notifier
