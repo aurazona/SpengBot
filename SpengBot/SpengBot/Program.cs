@@ -203,18 +203,24 @@ namespace DiscAura
                 }
             };
 
-            discord.DmChannelCreated += async e =>
+            //this is what happens if someone tries to DM SpengBot
+
+            discord.DmChannelCreated += async e => //if a DM channel is created between SpengBot and someone else
             {
                 await e.Channel.SendMessageAsync("Sorry, but SpengBot is not taking DMs at the moment.");
             };
 
+            //message deletion notifier
+            //this triggers if a message is deleted in the discord. 
             discord.MessageDeleted += async e =>
             {
                 await e.Message.RespondAsync($"smh my head. ayo {e.Message.Author.Mention}, someone deleted your mf message.");
             };
             
+            //actually connects the bot to discord
             await discord.ConnectAsync();
 
+            //this stops the bot from immediately shutting down as otherwise the bot will shut itself down after all current 'tasks' i.e connecting to discord have been completed.
             await Task.Delay(-1);
             
         }
