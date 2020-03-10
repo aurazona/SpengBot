@@ -190,5 +190,13 @@ namespace SpengBot
             await ctx.RespondAsync("check this shit out:");
             await ctx.RespondAsync($"https://www.dictionary.com/browse/{define}");
         }
+
+        [Command("ud")]
+
+        public async Task UrbanDefine(CommandContext ctx, string udefine)
+        {
+            await ctx.RespondAsync("spengbot is not responsible for any mental/emotional scarring:");
+            await ctx.RespondAsync($"https://www.urbandictionary.com/define.php?term={udefine}");
+        }
     }
 }
