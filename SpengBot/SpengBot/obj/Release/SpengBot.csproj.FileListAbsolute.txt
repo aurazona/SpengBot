@@ -1,0 +1,13 @@
+C:\Users\Jude\Documents\GitHub\SpengBot\SpengBot\SpengBot\bin\Release\SpengBot.exe.config
+C:\Users\Jude\Documents\GitHub\SpengBot\SpengBot\SpengBot\bin\Release\SpengBot.exe
+C:\Users\Jude\Documents\GitHub\SpengBot\SpengBot\SpengBot\bin\Release\SpengBot.pdb
+C:\Users\Jude\Documents\GitHub\SpengBot\SpengBot\SpengBot\bin\Release\DSharpPlus.CommandsNext.dll
+C:\Users\Jude\Documents\GitHub\SpengBot\SpengBot\SpengBot\bin\Release\DSharpPlus.dll
+C:\Users\Jude\Documents\GitHub\SpengBot\SpengBot\SpengBot\bin\Release\Newtonsoft.Json.dll
+C:\Users\Jude\Documents\GitHub\SpengBot\SpengBot\SpengBot\bin\Release\DSharpPlus.xml
+C:\Users\Jude\Documents\GitHub\SpengBot\SpengBot\SpengBot\bin\Release\DSharpPlus.CommandsNext.xml
+C:\Users\Jude\Documents\GitHub\SpengBot\SpengBot\SpengBot\bin\Release\Newtonsoft.Json.xml
+C:\Users\Jude\Documents\GitHub\SpengBot\SpengBot\SpengBot\obj\Release\SpengBot.csproj.CoreCompileInputs.cache
+C:\Users\Jude\Documents\GitHub\SpengBot\SpengBot\SpengBot\obj\Release\SpengBot.csproj.CopyComplete
+C:\Users\Jude\Documents\GitHub\SpengBot\SpengBot\SpengBot\obj\Release\SpengBot.exe
+C:\Users\Jude\Documents\GitHub\SpengBot\SpengBot\SpengBot\obj\Release\SpengBot.pdb

@@ -1,3 +1,14 @@
 
 SpengBot/SpengBot/.vs/SpengBot/v15/Server/sqlite3/db.lock
 *.lock
+SpengBot/SpengBot/bin/Release/SpengBot.exe
+SpengBot/SpengBot/bin/Release/SpengBot.exe.config
+SpengBot/SpengBot/bin/Release/SpengBot.pdb
+SpengBot/SpengBot/bin/Release/Newtonsoft.Json.xml
+SpengBot/SpengBot/bin/Release/Newtonsoft.Json.dll
+SpengBot/SpengBot/bin/Release/DSharpPlus.xml
+SpengBot/SpengBot/bin/Release/DSharpPlus.dll
+SpengBot/SpengBot/bin/Release/DSharpPlus.CommandsNext.xml
+SpengBot/SpengBot/bin/Release/DSharpPlus.CommandsNext.dll
+SpengBot/SpengBot/obj/Release/SpengBot.exe
+SpengBot/SpengBot/obj/Release/SpengBot.pdb
