@@ -183,7 +183,7 @@ namespace SpengBot
             
         }
 
-        [Command("Define")]
+        [Command("define")]
 
         public async Task Define(CommandContext ctx, string define)
         {
