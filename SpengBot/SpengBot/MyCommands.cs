@@ -198,5 +198,23 @@ namespace SpengBot
             await ctx.RespondAsync("spengbot is not responsible for any mental/emotional scarring:");
             await ctx.RespondAsync($"https://www.urbandictionary.com/define.php?term={udefine}");
         }
+
+        [Command("roast")]
+
+        /***
+        *Roast text file formatting:
+        * assume that the mention is like the first word
+        * i.e if there's a word after, add a space first.
+        * for things like 's, just slap em straight on
+         ***/
+        public async Task Roast(CommandContext ctx, string Roastee)
+        {
+            string[] roastLines = System.IO.File.ReadAllLines(@"X:\Data\SpengBot\roast.txt");
+            int roastMax = System.IO.File.ReadAllLines(@"X:\Data\SpengBot\roast.txt").Length;
+            var RoastRand = new Random();
+            int RoastChoice = RoastRand.Next(0, roastMax);
+            string Roast = roastLines[RoastChoice];
+            await ctx.RespondAsync($"{Roastee}{Roast}");
+        }
     }
 }
