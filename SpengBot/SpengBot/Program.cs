@@ -225,7 +225,14 @@ namespace DiscAura
             {
                 await e.Message.RespondAsync($"smh my head. ayo {e.Message.Author.Mention}, someone deleted your mf message.");
             };
-            
+
+            discord.MessageCreated += async e =>
+            {
+                if (e.Message.Content.ToLower().ToString().Equals("<@677228648582873089>") && e.Message.Author.Id.ToString().Equals("683859692501467136"))
+                {
+                    await e.Message.RespondAsync($"fuck off you glorified toaster");
+                }
+            };
             //actually connects the bot to discord
             await discord.ConnectAsync();
 
