@@ -36,7 +36,7 @@ namespace DiscAura
         {
             discord = new DiscordClient(new DiscordConfiguration
             {
-                Token = System.IO.File.ReadAllText(@"X:\Data\SpengBot\token.txt"),
+                Token = System.IO.File.ReadAllText(@"token.txt"), //token changed for running on the pi
                 TokenType = TokenType.Bot,
                 UseInternalLogHandler = true,
                 LogLevel = LogLevel.Debug

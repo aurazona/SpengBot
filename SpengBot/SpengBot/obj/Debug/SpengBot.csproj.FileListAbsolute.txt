@@ -7,7 +7,6 @@ C:\Users\Jude\Documents\GitHub\SpengBot\SpengBot\SpengBot\bin\Debug\Newtonsoft.J
 C:\Users\Jude\Documents\GitHub\SpengBot\SpengBot\SpengBot\bin\Debug\DSharpPlus.xml
 C:\Users\Jude\Documents\GitHub\SpengBot\SpengBot\SpengBot\bin\Debug\DSharpPlus.CommandsNext.xml
 C:\Users\Jude\Documents\GitHub\SpengBot\SpengBot\SpengBot\bin\Debug\Newtonsoft.Json.xml
-C:\Users\Jude\Documents\GitHub\SpengBot\SpengBot\SpengBot\obj\Debug\SpengBot.csprojAssemblyReference.cache
 C:\Users\Jude\Documents\GitHub\SpengBot\SpengBot\SpengBot\obj\Debug\SpengBot.csproj.CoreCompileInputs.cache
 C:\Users\Jude\Documents\GitHub\SpengBot\SpengBot\SpengBot\obj\Debug\SpengBot.csproj.CopyComplete
 C:\Users\Jude\Documents\GitHub\SpengBot\SpengBot\SpengBot\obj\Debug\SpengBot.exe

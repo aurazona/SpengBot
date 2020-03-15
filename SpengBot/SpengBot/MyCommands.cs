@@ -71,8 +71,8 @@ namespace SpengBot
         {
             if (Program.SpengDebug == false)
             {
-                string[] lines = System.IO.File.ReadAllLines(@"X:\Data\SpengBot\davidsays.txt");
-                int davidLines = System.IO.File.ReadAllLines(@"X:\Data\SpengBot\davidsays.txt").Length; //grabs how many lines are in the file. Refer to github issue #9 for info.
+                string[] lines = System.IO.File.ReadAllLines(@"davidsays.txt"); //look into changing for pi
+                int davidLines = System.IO.File.ReadAllLines(@"davidsays.txt").Length; //grabs how many lines are in the file. Refer to github issue #9 for info.
                 var davidRnd = new Random();
                 int davidChoice = davidRnd.Next(0, davidLines);
                 string davidSays = lines[davidChoice];
@@ -89,7 +89,7 @@ namespace SpengBot
         {
             if (Program.SpengDebug == false)
             {
-                await ctx.RespondWithFileAsync(@"X:\Data\SpengBot\jim.PNG");
+                await ctx.RespondWithFileAsync(@"jim.PNG");
             }
             else
             {
@@ -102,7 +102,7 @@ namespace SpengBot
         {
             if (Program.SpengDebug == false)
             {
-                await ctx.RespondWithFileAsync(@"X:\Data\SpengBot\unity.mp3");
+                await ctx.RespondWithFileAsync(@"unity.mp3");
             }
             else
             {
@@ -143,7 +143,7 @@ namespace SpengBot
         {
             if (Program.SpengDebug == false)
             {
-                string[] lines2 = System.IO.File.ReadAllLines(@"X:\Data\SpengBot\ddos.txt");
+                string[] lines2 = System.IO.File.ReadAllLines(@"ddos.txt"); //look into changing for pi
                 var DdosRnd = new Random();
                 int DdosChoice = DdosRnd.Next(0, 17);
                 string Ddos = lines2[DdosChoice];
@@ -210,8 +210,8 @@ namespace SpengBot
          ***/
         public async Task Roast(CommandContext ctx, string Roastee)
         {
-            string[] roastLines = System.IO.File.ReadAllLines(@"X:\Data\SpengBot\roast.txt");
-            int roastMax = System.IO.File.ReadAllLines(@"X:\Data\SpengBot\roast.txt").Length;
+            string[] roastLines = System.IO.File.ReadAllLines(@"roast.txt"); //look into changing for pi
+            int roastMax = System.IO.File.ReadAllLines(@"roast.txt").Length;
             var RoastRand = new Random();
             int RoastChoice = RoastRand.Next(0, roastMax);
             string Roast = roastLines[RoastChoice];
